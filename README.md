@@ -1,4 +1,4 @@
-# Gadget Sales CDC Pipeline on AWS
+# Gadget Sales Real-Time Data Projection and CDC Pipeline on AWS
 
 An event-driven Change Data Capture (CDC) pipeline built using AWS services to capture gadget sales data changes, transform events using AWS Lambda, and store projected CDC events in Amazon S3 for analytics.
 
@@ -63,16 +63,9 @@ Amazon Athena
 ```text
 gadget-sales-cdc-pipeline/
 ├── lambda/
-│   └── lambda_function.py
-├── terraform/
-│   ├── main.tf
-│   ├── variables.tf
-│   ├── outputs.tf
-│   ├── providers.tf
-│   └── terraform.tfvars.example
-├── demo/
-│   └── demo-video-link.md
-├── .gitignore
+│   └── producer.py
+│   └── transform-for-firehose.py
+├── Architecture.jpg
 └── README.md
 ```
 ## Data Flow
@@ -95,39 +88,6 @@ The Lambda function processes Firehose transformation requests and:
 - Returns records using the Firehose transformation response format.
 - Handles malformed records according to the configured error-handling logic.
 
-## Terraform Deployment
-
-Prerequisites:
-- AWS CLI configured with appropriate credentials
-- Terraform installed
-- Required AWS permissions
-
-Initialize Terraform:
-
-
-Bash
-cd terraform
-terraform init
-Validate the configuration:
-
-
-Bash
-terraform validate
-Review the deployment plan:
-
-
-Bash
-terraform plan
-Deploy the infrastructure:
-
-
-Bash
-terraform apply
-Review resources before applying changes. To remove Terraform-managed resources when no longer needed:
-
-
-Bash
-terraform destroy
 ## Demo Video
 
 Watch the project demonstration:
