@@ -1,6 +1,6 @@
 # Gadget Sales Real-Time Data Projection and CDC Pipeline on AWS
 
-An event-driven Change Data Capture (CDC) pipeline built using AWS services to capture gadget sales data changes, transform events using AWS Lambda, and store projected CDC events in Amazon S3 for analytics.
+Real-time AWS CDC pipeline that captures INSERT, MODIFY, and REMOVE operations from DynamoDB, streams events through EventBridge Pipes and Kinesis, transforms and projects required attributes using AWS Lambda, and delivers JSON data to Amazon S3 for SQL-based analytics using AWS Glue and Amazon Athena.
 
 ## Architecture
 
