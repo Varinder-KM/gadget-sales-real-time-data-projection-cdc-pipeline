@@ -132,7 +132,7 @@ terraform destroy
 
 Watch the project demonstration:
 
-[Add your demo video URL here]
+[https://youtu.be/BR6kUkjB3i4?si=rXFTqUEDyPGOlx0s]
 
 ## Data Storage Design
 
