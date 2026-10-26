@@ -92,7 +92,7 @@ The Lambda function processes Firehose transformation requests and:
 
 Watch the project demonstration:
 
-[https://youtu.be/BR6kUkjB3i4?si=rXFTqUEDyPGOlx0s]
+[https://youtu.be/G5nb7lvztOw?si=4432QFUKKQ7HHFgV]
 
 ## Data Storage Design
 
